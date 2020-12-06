@@ -1,0 +1,155 @@
+.footer {
+    background-color: $bg-color;
+}
+
+
+.foot-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: 252px;
+}
+
+.adress {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71em;
+    letter-spacing: 0.03em;
+    color: $white-color;
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+
+.foot-contacts {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71em;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 9;
+}
+
+.tel {
+    margin-bottom: 0;
+}
+
+.join {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.03em;
+    color: $white-color;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.join-us {
+    padding-top: 72px;
+    margin-left: 70px;
+}
+
+.footer-content {
+    display: inline-flex;
+}
+
+.social-footer {
+    display: flex;
+}
+
+.footer-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color:$white-color;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color $animation;
+
+    &:hover,
+    &:focus {
+    background: $highlight-color;
+    }   
+}
+
+.footer-icon-svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.comment {
+    height: 120px;
+    display: flex;
+    padding-top: 12px;
+    padding-left: 16px; 
+    resize: none;  
+    margin-bottom: 20px;
+}
+
+.form-icon-svg {
+    position: absolute;
+    top: 57%;
+    left: 15px;
+    transform: translateY(-57%);
+    background-size: contain; 
+    fill: black;   
+}
+
+.subscribe {
+    padding-top: 72px;
+    margin-left: 93px; 
+    position: relative;
+}
+
+.subscribe-items {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-btn {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    
+    padding-left: 29px;
+    padding-right: 62px;
+    margin-left: 12px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-style: none;
+    border-radius: 4px; 
+    cursor: pointer;
+}
+
+.subscribe-word {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    color: $white-color;
+    letter-spacing: 0.06em;
+    margin: 0;
+    padding: 0; 
+  
+}
+
+.subscribe-svg {
+    position: absolute;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
+}

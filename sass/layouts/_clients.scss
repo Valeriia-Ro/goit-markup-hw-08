@@ -1,0 +1,47 @@
+.clients-bgc {
+    background-color: $white-color;
+}
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-logo {
+    display: flex;
+}
+
+.icon-clients {
+    fill: currentColor;
+    transition: fill $animation;
+}
+
+.icon-link {
+    display: flex;
+    color: $svg-cl;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $svg-cl;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    transition: border $animation;
+
+    &:hover,
+    &:focus {
+    border: 1px solid $highlight-color;
+    }
+}
+.icon-link:last-child {
+    margin-right: 0;
+}
+
+.icon-link:hover .icon-clients,
+.icon-link:focus .icon-clients {
+    color: $highlight-color;
+}
+
+
+.icon-item:not(:last-child) {
+    margin-right: 30px;
+}

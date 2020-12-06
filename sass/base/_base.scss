@@ -1,0 +1,27 @@
+body {
+    font-family: Roboto, sans-serif;
+    background-color: $white-color;  
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;    
+
+    &:hover,
+    &:focus{
+        color:  $highlight-color;
+    }
+}
+
+.content {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}

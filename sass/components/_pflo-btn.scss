@@ -1,0 +1,39 @@
+.main-cont {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.btn-list {
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 36px;
+    padding-bottom: 16px;
+    
+}
+.btn-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.btn {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625em;
+    letter-spacing: 0.03em;
+    color:  $title-text-color;
+    padding: 6px 22px;
+    min-width: 73px;
+    border-radius: 4px;
+    border: 0;
+    transition: color $animation, 
+    background-color $animation;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+    background-color: $highlight-color;
+    color: $white-color;
+    }
+}
+

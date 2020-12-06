@@ -1,0 +1,96 @@
+.team-content {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team-list {
+    display: flex;
+}
+
+.team-element {
+    width: 270px;
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: $white-color;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.team-element:last-child {
+    margin-right: 0;
+}
+
+.team {
+    background: #F5F4FA;
+}
+
+.team-ph {
+   margin-bottom: 28px; 
+}
+
+.subtitle-names {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.text-job {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.19em;
+    letter-spacing: 0.03em;
+    color: $p-text-color;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.team-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links-items:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-link {
+    text-decoration: none;
+    display: flex;
+    color: $svg-cl;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: $white-color; 
+    border-radius: 50%;
+    transition: background-color $animation;
+
+    &:hover,
+    &:focus {
+    background-color: $highlight-color;
+    }
+}
+
+.social-link-svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    transition: fill $animation;
+}
+
+
+.social-link:hover .social-link-svg,
+.social-link:focus .social-link-svg {
+    fill: $white-color;
+    background-color: var(--highliting-color);
+}

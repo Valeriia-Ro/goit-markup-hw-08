@@ -1,12 +1,14 @@
 .footer {
     background-color: $bg-color;
 }
-
-
-.foot-content {
+.footer-content {
+    text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
-    height: 252px;
+}
+
+.foot-content {
+    padding-bottom: 60px;
 }
 
 .adress {
@@ -18,7 +20,7 @@
     letter-spacing: 0.03em;
     color: $white-color;
     margin-top: 20px;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 .foot-contacts {
@@ -46,25 +48,28 @@
     color: $white-color;
     margin-bottom: 20px;
     text-transform: uppercase;
-}
-.join-us {
-    padding-top: 72px;
-    margin-left: 70px;
+    margin-top: 0;
 }
 
-.footer-content {
-    display: inline-flex;
-}
+// .join-us {
+//     padding-top: 72px;
+//     margin-left: 70px;
+// }
+
+// .footer-content {
+//     display: inline-flex;
+// }
 
 .social-footer {
     display: flex;
+    justify-content: center;
 }
 
-.footer-item:not(:last-child) {
+.join-item:not(:last-child) {
     margin-right: 10px;
 }
 
-.footer-icon-link {
+.join-icon-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +86,7 @@
     }   
 }
 
-.footer-icon-svg {
+.join-icon-svg {
     width: 20px;
     height: 20px;
     fill: currentColor;
@@ -96,30 +101,23 @@
     margin-bottom: 20px;
 }
 
-.form-icon-svg {
-    position: absolute;
-    top: 57%;
-    left: 15px;
-    transform: translateY(-57%);
-    background-size: contain; 
-    fill: black;   
-}
+
 
 .subscribe {
-    padding-top: 72px;
-    margin-left: 93px; 
+    padding-top: 60px;
+    // margin-left: 93px; 
     position: relative;
 }
 
-.subscribe-items {
-    display: flex;
-    align-items: center;
-}
+// .subscribe-items {
+//     display: flex;
+//     align-items: center;
+// }
 
 .subscribe-btn {
     position: relative;
-    width: 200px;
-    height: 50px;
+    width: 109px;
+    height: 48px;
     
     padding-left: 29px;
     padding-right: 62px;
@@ -129,6 +127,7 @@
     border-style: none;
     border-radius: 4px; 
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .subscribe-word {
@@ -152,4 +151,31 @@
     top: 50%;
     right: 28px;
     transform: translateY(-50%);
+}
+
+.mail-input:placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+.mail-input {
+    width: 450px;
+    height: 50px;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: $white-color;
+    background: transparent;
+    padding-left: 16px;
 }

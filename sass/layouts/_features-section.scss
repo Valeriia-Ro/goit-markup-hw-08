@@ -1,7 +1,7 @@
-// .features {
-//     margin-top: 94px;
-//     margin-bottom: 94px;
-// }
+.features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 .visually-hidden {
     position: absolute !important;
@@ -28,7 +28,7 @@
 //     margin-right: 0;
 // }
 
-.bg-svg {
+.feature-bg {
     border: 0;
     padding: 0;
     display: flex;
@@ -46,8 +46,8 @@
     height: 70px;
 }
 
-.item-list-header {
-
+.feature-list-header {
+    text-align: center;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -61,7 +61,7 @@
 }
 
 
-.desc {
+.feature-desc {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -70,4 +70,8 @@
     letter-spacing: 0.03em;
     color: $p-text-color;
     margin: 0;
+    
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
 }

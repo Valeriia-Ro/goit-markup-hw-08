@@ -72,61 +72,63 @@
                     <h2 class="visually-hidden">Особенности</h2>
 
                     <ul class="list features-list">
-                        <li class="item feature-img">
-                            <div class="bg-svg"> <svg class="features-svg"><use href="./images/sprite.svg#antenna"></use></svg></div>
-                            <h3 class="item-list-header">Внимание к деталям</h3>
-                            <p class="desc">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                        <li class="feature-item">
+                            <div class="feature-bg"> <svg class="features-svg"><use href="./images/sprite.svg#antenna"></use></svg></div>
+                            <h3 class="feature-list-header">Внимание к деталям</h3>
+                            <p class="feature-desc">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                         </li>
-                        <li class="item">
-                            <div class="bg-svg">
+                        <li class="feature-item">
+                            <div class="feature-bg">
                                 <svg class="features-svg"><use href="./images/sprite.svg#clock"></use></svg>
                             </div>
-                            <h3 class="item-list-header" >Пунктуальность</h3>
-                            <p class="desc">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                            <h3 class="feature-list-header" >Пунктуальность</h3>
+                            <p class="feature-desc">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                         </li>
-                        <li class="item">
-                            <div class="bg-svg"><svg class="features-svg"><use href="./images/sprite.svg#diagram"></use></svg></div>
-                            <h3 class="item-list-header" >Планирование</h3>
-                            <p class="desc">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                        <li class="feature-item">
+                            <div class="feature-bg"><svg class="features-svg"><use href="./images/sprite.svg#diagram"></use></svg></div>
+                            <h3 class="feature-list-header" >Планирование</h3>
+                            <p class="feature-desc">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                         </li>
-                        <li class="item">
-                            <div class="bg-svg"><svg class="features-svg"><use href="./images/sprite.svg#astronaut"></use></svg></div>
-                            <h3 class="item-list-header" >Современные технологии</h3>
-                            <p class="desc">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        <li class="feature-item">
+                            <div class="feature-bg"><svg class="features-svg"><use href="./images/sprite.svg#astronaut"></use></svg></div>
+                            <h3 class="feature-list-header" >Современные технологии</h3>
+                            <p class="feature-desc">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                         </li>
                     </ul>
                 </div> 
 
             </section>
             <!--Специализация-->
-            <section class="content">
-                <div class="special">
-                    <h2 class="subtitle">Чем мы занимаемся</h2>
+            <div class="special-hidden" >
+                <section class="content">
+                    <div class="special">
+                        <h2 class="subtitle">Чем мы занимаемся</h2>
 
-                    <ul class="list ph-list">
-                        <li class="element">
-                            <a class="caption-link" href="">
-                                <img class="photo" src="./images/box1.png" alt="Человек набирает код" width="370"/>
-                                <p class="caption">Десктопные приложения</p>
-                            </a>
-                        </li> 
-                        <li class="element"> 
-                            <a class="caption-link" href="">
-                                <img class="photo" src="./images/img.png" alt="Просмотр адаптации страницы под телефон" width="370"/>
-                                <p class="caption">Мобильные приложения</p>
-                            </a>
-                        </li> 
-                        <li class="element"> 
-                            <a class="caption-link" href="">
-                                <img class="photo" src="./images/img(1).png" alt="Выбор цвета с градации на планшете" width="370"/>
-                                <p class="caption">Дизайнерские решения</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                        <ul class="list special-list">
+                            <li class="special__element">
+                                <a class="special__link" href="">
+                                    <img class="photo" src="./images/box1.png" alt="Человек набирает код" width="370"/>
+                                    <p class="special__caption">Десктопные приложения</p>
+                                </a>
+                            </li> 
+                            <li class="special__element"> 
+                                <a class="special__link" href="">
+                                    <img class="photo" src="./images/img.png" alt="Просмотр адаптации страницы под телефон" width="370"/>
+                                    <p class="special__caption">Мобильные приложения</p>
+                                </a>
+                            </li> 
+                            <li class="special__element"> 
+                                <a class="special__link" href="">
+                                    <img class="photo" src="./images/img(1).png" alt="Выбор цвета с градации на планшете" width="370"/>
+                                    <p class="special__caption">Дизайнерские решения</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-            </section>
-         </div>
+                </section>
+            </div>
+        </div>    
         <!-- Наша команда-->
         
         <div class="team">
@@ -135,7 +137,13 @@
                     <h2 class="subtitle">Наша команда</h2>
                     <ul class="list team-list">
                         <li class="team-element">
-                            <img class="team-ph" src="./images/igor.jpg" alt=" Портретное фото Игорь Демьяненко" width="270"/>
+                            <img class="team-ph" 
+                                srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x"
+                                src="./images/igor.jpg" 
+                                alt="Портретное фото Игорь Демьяненко" 
+                                width="450"
+                                
+                            />
                             <h3 class="subtitle-names">Игорь Демьяненко</h3>
                             <p class="text-job">Product Designer</p>
                            <ul class="list team-social">
@@ -170,7 +178,11 @@
                            </ul>
                         </li>
                         <li class="team-element">
-                            <img class="team-ph" src="./images/olga.jpg" alt=" Портретное фото Ольга Репина" width="270"/>
+                            <img class="team-ph" 
+                                srcset="./images/olga.jpg 1x, ./images/olga@2x.jpg 2x"
+                                src="./images/olga.jpg" 
+                                alt=" Портретное фото Ольга Репина" 
+                                width="450"/>
                             <h3 class="subtitle-names">Ольга Репина</h3>
                             <p class="text-job">Frontend Developer</p>
                             <ul class="list team-social">
@@ -205,7 +217,11 @@
                             </ul>
                         </li>
                         <li class="team-element">
-                            <img class="team-ph" src="./images/nikolay.jpg" alt="Портретное фото Николай Тарасов" width="270"/>
+                            <img class="team-ph" 
+                                srcset="./images/nikolay.jpg 1x, ./images/nikolay@2x.jpg 2x"
+                                src="./images/nikolay.jpg" 
+                                alt="Портретное фото Николай Тарасов" 
+                                width="450"/>
                             <h3 class="subtitle-names">Николай Тарасов</h3>
                             <p class="text-job">Marketing</p>
                             <ul class="list team-social">
@@ -240,7 +256,11 @@
                             </ul>
                         </li>
                         <li class="team-element">
-                            <img class="team-ph" src="./images/mihail.jpg" alt="Портретное фото Михаил Ермаков" width="270"/>
+                            <img class="team-ph"
+                                srcset="./images/mihail.jpg 1x, ./images/mihail@2x.jpg 2x" 
+                                src="./images/mihail.jpg" 
+                                alt="Портретное фото Михаил Ермаков" 
+                                width="450"/>
                             <h3 class="subtitle-names">Михаил Ермаков</h3>
                             <p class="text-job">UI Designer</p>
                             <ul class="list team-social">
@@ -326,14 +346,14 @@
                 <div class="join-us">
                     <h2 class="join">присоединяйтесь</h2>
                     <ul class="list social-footer">
-                        <li class="footer-item"> <a class="footer-icon-link" href="https://instagram.com/" target="_blank" rel="noopener noreferer" aria-label="Instagram">
-                            <svg class="footer-icon-svg" ><use href="./images/sprite.svg#instagram"></use></svg></a></li>
-                        <li class="footer-item"> <a class="footer-icon-link" href="https://twitter.com/" target="_blank" rel="noopener noreferer" aria-label="Twitter">
-                            <svg class="footer-icon-svg" ><use href="./images/sprite.svg#twitter"></use></svg></a></li>
-                        <li class="footer-item"> <a class="footer-icon-link" href="https://facebook.com/" target="_blank" rel="noopener noreferer" aria-label="Facebook">
-                            <svg class="footer-icon-svg" ><use href="./images/sprite.svg#facebook"></use></svg></a></li>
-                        <li class="footer-item"> <a class="footer-icon-link" href="https://linkedin.com/" target="_blank" rel="noopener noreferer" aria-label="Linkedin">
-                            <svg class="footer-icon-svg" ><use href="./images/sprite.svg#linkedin"></use></svg></a></li>
+                        <li class="join-item"> <a class="join-icon-link" href="https://instagram.com/" target="_blank" rel="noopener noreferer" aria-label="Instagram">
+                            <svg class="join-icon-svg" ><use href="./images/sprite.svg#instagram"></use></svg></a></li>
+                        <li class="join-item"> <a class="join-icon-link" href="https://twitter.com/" target="_blank" rel="noopener noreferer" aria-label="Twitter">
+                            <svg class="join-icon-svg" ><use href="./images/sprite.svg#twitter"></use></svg></a></li>
+                        <li class="join-item"> <a class="join-icon-link" href="https://facebook.com/" target="_blank" rel="noopener noreferer" aria-label="Facebook">
+                            <svg class="join-icon-svg" ><use href="./images/sprite.svg#facebook"></use></svg></a></li>
+                        <li class="join-item"> <a class="join-icon-link" href="https://linkedin.com/" target="_blank" rel="noopener noreferer" aria-label="Linkedin">
+                            <svg class="join-icon-svg" ><use href="./images/sprite.svg#linkedin"></use></svg></a></li>
                     </ul>
                 </div>
                 <div class="subscribe">

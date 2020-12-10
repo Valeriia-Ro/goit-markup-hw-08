@@ -126,29 +126,11 @@
     cursor: pointer;  
 }
 
-.mail-input:placeholder {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-
-}
-
-.mail-input {
-    width: 358px;
-    height: 50px;
-    margin: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    color: $white-color;
-    background: transparent;
-    padding-left: 16px;
+.form-icon-svg {
+    position: absolute;
+    top: 57%;
+    left: 15px;
+    transform: translateY(-57%);
+    background-size: contain; 
+    fill: black;   
 }

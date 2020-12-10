@@ -1,51 +1,61 @@
-.special {
-    margin-bottom: 94px;
+@media screen and  (max-width: 1199px) {
+
+    .special-hidden {
+        display: none;
+    }
 }
 
-.subtitle {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.17em;
-    letter-spacing: 0.03em;
-    color: $title-text-color;
-    margin-top: 0;
-    margin-bottom: 50px;
-    text-align: center;
-}
+@media screen and (min-width: 1200px) {
 
-.ph-list {
-    display: flex;
-}
+    .spesial {
+        display: flex;
+    }
+  
+    // .subtitle {
+    //     font-family: Roboto;
+    //     font-style: normal;
+    //     font-weight: bold;
+    //     font-size: 28px;
+    //     line-height: 1.18em;
+    //     letter-spacing: 0.03em;
+    //     color: $title-text-color;
+    //     margin-top: 0;
+    //     margin-bottom: 30px;
+    //     text-align: center;
+    // }
 
-.element:not(:last-child) { 
-  margin-right: 30px;
-}
+    .special-list {
+        display: flex;
+    }
 
-.caption-link {
-    text-decoration: none;
-    position: relative;
-}
+    .element:not(:last-child) { 
+    margin-right: 30px;
+    }
 
-.caption {
-    margin: 0;
-    position: absolute;
-    align-content: center;
-    left: 0;
-    bottom: 4px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $white-color;
-    background-color: rgba(47, 48, 58, 0.8);
-    width: 100%;
-    height: 70px;
-    padding-top: 27px;
+    .special__link {
+        text-decoration: none;
+        position: relative;
+    }
 
+    .special__caption {
+        margin: 0;
+        position: absolute;
+        align-content: center;
+        left: 0;
+        bottom: 4px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $white-color;
+        background-color: rgba(47, 48, 58, 0.8);
+        width: 100%;
+        height: 70px;
+        padding-top: 27px;
+
+    }
 }

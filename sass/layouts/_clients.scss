@@ -3,12 +3,13 @@
 }
 
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .clients-logo {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .icon-clients {
@@ -19,8 +20,8 @@
 .icon-link {
     display: flex;
     color: $svg-cl;
-    width: 170px;
-    height: 90px;
+    width: 208px;
+    height: 88px;
     border: 1px solid $svg-cl;
     border-radius: 4px;
     justify-content: center;
@@ -29,12 +30,12 @@
 
     &:hover,
     &:focus {
-    border: 1px solid $highlight-color;
+        border: 1px solid $highlight-color;
     }
 }
-.icon-link:last-child {
-    margin-right: 0;
-}
+// .icon-link:last-child {
+//     margin-right: 0;
+// }
 
 .icon-link:hover .icon-clients,
 .icon-link:focus .icon-clients {
@@ -42,6 +43,13 @@
 }
 
 
-.icon-item:not(:last-child) {
-    margin-right: 30px;
+.icon-item{
+    margin-bottom: 30px;
+
+    &:nth-child(2n+1) {
+        margin-right: 30px;
+    }
+    &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+    }
 }

@@ -1,17 +1,20 @@
 .main-cont {
-    margin-top: 94px;
-    margin-bottom: 94px;
+
+    margin-top: 60px;
+    margin-bottom: 60px;
+    // margin-top: 94px;
+    // margin-bottom: 94px;
 }
 
 .btn-list {
     display: flex; 
-    justify-content: center; 
-    margin-bottom: 36px;
-    padding-bottom: 16px;
+    flex-wrap: wrap;
+    padding-bottom: 24px;
     
 }
 .btn-item:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 16px;
 }
 
 .btn {
@@ -23,7 +26,7 @@
     letter-spacing: 0.03em;
     color:  $title-text-color;
     padding: 6px 22px;
-    min-width: 73px;
+    min-width: 29px;
     border-radius: 4px;
     border: 0;
     transition: color $animation, 

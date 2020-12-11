@@ -107,12 +107,14 @@
     padding-top: 60px;
     // margin-left: 93px; 
     position: relative;
+    text-align: center;
 }
 
 // .subscribe-items {
 //     display: flex;
 //     align-items: center;
 // }
+
 
 .subscribe-btn {
     position: relative;
@@ -178,4 +180,9 @@
     color: $white-color;
     background: transparent;
     padding-left: 16px;
+}
+
+.mail-label {
+    margin: 0;
+    padding: 0;
 }

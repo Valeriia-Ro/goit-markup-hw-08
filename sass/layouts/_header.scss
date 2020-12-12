@@ -68,7 +68,9 @@
     background-color: $white-color;
 
     &.is-open {
-        display: block;
+        @include for-size(mobile-only) {
+            display: block;
+        }    
     }
 
     @include for-size(mobile-only) {

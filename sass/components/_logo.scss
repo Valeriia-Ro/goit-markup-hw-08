@@ -10,6 +10,10 @@
     text-decoration: none;
     padding: 0;
 
+    @include for-size(tablet){
+        margin-right: 88px;
+    }
+    
     @include for-size(desktop){
         font-size: 26px;
         line-height: 1.19;

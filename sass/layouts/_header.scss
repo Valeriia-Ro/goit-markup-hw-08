@@ -110,12 +110,30 @@
 
 }
 
-.site-nav__item:nth-child(2) {
-    margin-top: 48px;
-}
-.site-nav__item:nth-child(3) {
-    margin-top: 40px;
-}
+.site-nav__item {
+
+    &:nth-child(2) {
+        margin-top: 48px;
+        @include for-size(tablet) {
+            margin-top: 0;
+        }
+    }
+    
+    &:nth-child(3) {
+        margin-top: 40px;
+        @include for-size(tablet) {
+            margin-top: 0;
+            margin-left: 0;
+        }
+    }
+
+    &:not(:last-child) {
+        @include for-size(tablet) {
+            margin-right: 50px;
+        }
+    }    
+}  
+
 
 .active-page::after {
     content: '';

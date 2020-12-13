@@ -1,17 +1,24 @@
 .main-cont {
 
-    margin-top: 60px;
-    margin-bottom: 60px;
-    // margin-top: 94px;
-    // margin-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include for-size(desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .btn-list {
     display: flex; 
     flex-wrap: wrap;
     padding-bottom: 24px;
-    
+
+    @include for-size(tablet) {
+        justify-content: center;
+    }
 }
+
 .btn-item:not(:last-child) {
     margin-right: 8px;
     margin-bottom: 16px;

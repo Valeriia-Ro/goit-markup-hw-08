@@ -172,6 +172,14 @@
     height: 4px;
     background-color: $highlight-color;
     border-radius: 2px;
+
+    @include for-size(tablet) {
+        top: 50px;
+    }
+
+    @include for-size(desktop) {
+        top: 46px;
+    }
 }
 
 

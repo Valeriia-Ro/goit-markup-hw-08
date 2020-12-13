@@ -36,18 +36,31 @@
     text-align: center;
     padding-bottom: 24px;
     &:not(:last-child) {
+        margin-right: 30px;
         margin-bottom: 30px;
     }
 
     @include for-size(tablet) {
-        margin-right: 30px;
         width: 354px;
         height: 536px;
+    }
+
+    &:nth-child(2n) {
+        @include for-size(tablet) {
+            margin-right: 0;
+        }
+        
     }
 
     @include for-size(desktop) {
         width: 270px;
         height: 398px;
+        margin-bottom: 0;
+        
+        &:not(:last-child) {
+            margin-right: 30px;
+            
+        }
     }
 }
 

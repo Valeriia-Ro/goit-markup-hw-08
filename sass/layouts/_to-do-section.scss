@@ -12,6 +12,10 @@
     }
 }
 
+.special__element {
+    position: relative;
+}
+
 .special-list {
     display: flex;
 }
@@ -22,7 +26,6 @@
 
 .special__link {
     text-decoration: none;
-    position: relative;
 }
 
 .special__caption {
@@ -30,7 +33,7 @@
     position: absolute;
     align-content: center;
     left: 0;
-    bottom: 4px;
+    bottom: 0;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;

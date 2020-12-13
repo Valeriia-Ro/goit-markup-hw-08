@@ -20,8 +20,8 @@
 .icon-link {
     display: flex;
     color: $svg-cl;
-    width: 208px;
-    height: 88px;
+    width: 210px;
+    height: 90px;
     border: 1px solid $svg-cl;
     border-radius: 4px;
     justify-content: center;
@@ -44,10 +44,6 @@
     }
 }
 
-// .icon-link:last-child {
-//     margin-right: 0;
-// }
-
 .icon-link:hover .icon-clients,
 .icon-link:focus .icon-clients {
     color: $highlight-color;
@@ -60,14 +56,20 @@
     &:nth-child(2n+1) {
         margin-right: 30px;
     }
+
     &:nth-last-child(-n+2) {
         margin-bottom: 0;
     }
 
     @include for-size(tablet) {
+           
         margin-right: 30px;
 
         &:nth-child(3n+3) {
+            margin-right: 0;
+        }
+
+        &:nth-child(3) {
             margin-right: 0;
         }
         
@@ -76,10 +78,10 @@
         }
     }
 
-    @include for-size(tablet) {
-        &:not(:last-child) {
+    &:not(:last-child) {
+        @include for-size(desktop) {
             margin-right: 30px;
         }
-       
     }
+    
 }

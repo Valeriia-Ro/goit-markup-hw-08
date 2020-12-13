@@ -9,10 +9,6 @@
     color: $title-text-color;
     text-decoration: none;
     padding: 0;
-
-    @include for-size(tablet){
-        margin-right: 88px;
-    }
     
     @include for-size(desktop){
         font-size: 26px;
@@ -20,6 +16,15 @@
         margin-right: 93px;
     }
 }
+
+.header__content {
+    & > .logo {
+        @include for-size(tablet){
+            margin-right: 88px;
+        }
+    }
+}
+
 
 .logo-web {
     color:  $highlight-color;

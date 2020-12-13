@@ -13,6 +13,7 @@
         border-color: $highlight-color;
     }   
 }
+
 .modal-label {
     width: 100%;
     display: block;
@@ -20,7 +21,6 @@
     margin: 0;
     padding: 0;
 }
-
 
 .modal-input:focus + .form-icon-svg {
     fill: $highlight-color;  
@@ -68,6 +68,7 @@
     appearance: none;
     position: absolute;
 }
+
 .icon-checkbox {
     display: inline-block;
     width: 16px;
@@ -88,25 +89,34 @@
 
 .checkbox-label {
     padding: 0;
-    display: flex;
-    margin-left: 11px;
-    margin-right: 11px;
-    margin-top: 0;
+    display: block;
+    
+    margin-top: 20px;
     margin-bottom: 30px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 1.17em;    
     letter-spacing: 0.03em;
     color: $p-text-color;
     align-items: center;
     justify-content: center;
+    width: 370px;
+
+    @include for-size(desktop) {
+        font-size: 14px;
+        line-height: 24px; 
+        margin-left: 11px;
+        margin-right: 11px;
+    }
 }
 
 .document {
     color: $highlight-color;
-    margin-left: 4px;
+    @include for-size(desktop) {
+        margin-left: 4px;
+    }
 }
 
 .form-btn {

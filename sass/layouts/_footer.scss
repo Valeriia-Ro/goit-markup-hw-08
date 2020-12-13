@@ -1,6 +1,7 @@
 .footer {
     background-color: $bg-color;
 }
+
 .footer-content {
     text-align: center;
     padding-top: 60px;
@@ -9,9 +10,16 @@
     @include for-size(tablet) {
         display: flex;
         flex-wrap: wrap;
-        padding-left: 76px;
-        padding-right: 89px;
+        // padding-left: 76px;
+        // padding-right: 89px;
     }
+
+    @include for-size(desktop) {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
 }
 
 .foot-content {
@@ -22,6 +30,11 @@
         text-align: center;
         align-items: center;
         margin-bottom: 0;
+    }
+
+    @include for-size(desktop) {
+        margin-right: 70px;
+        text-align: start;
     }
 }
 
@@ -66,14 +79,15 @@
     margin-top: 0;
 }
 
-// .join-us {
-//     padding-top: 72px;
-//     margin-left: 70px;
-// }
-
-// .footer-content {
-//     display: inline-flex;
-// }
+@media screen and(min-width: 1200px) {
+    .join-us {
+        padding-top: 12px;
+    }
+    
+    .footer-content {
+        display: inline-flex;
+    }
+}
 
 .social-footer {
     display: flex;
@@ -119,17 +133,20 @@
 
 
 .subscribe {
-    margin-top: 60px;
-    // margin-left: 93px; 
+    margin-top: 12px;
     position: relative;
     text-align: center;
+    @include for-size(desktop) {
+        margin-left: 93px; 
+    }
 }
 
-// .subscribe-items {
-//     display: flex;
-//     align-items: center;
-// }
-
+@media screen and(min-width: 1200px) {
+    .subscribe-items {
+        display: flex;
+        align-items: center;
+    }
+}
 
 .subscribe-btn {
     position: relative;
@@ -145,6 +162,10 @@
     border-radius: 4px; 
     cursor: pointer;
     margin-top: 20px;
+
+    @include for-size(desktop) {
+        margin-top: 0;
+    }
 }
 
 .subscribe-word {
@@ -183,8 +204,8 @@
 }
 
 .mail-input {
-    width: 450px;
-    height: 50px;
+    width: 448px;
+    height: 48px;
     margin: 0;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -195,6 +216,11 @@
     color: $white-color;
     background: transparent;
     padding-left: 16px;
+
+    @include for-size(desktop) {
+        width: 356px;
+    }
+
 }
 
 .mail-label {

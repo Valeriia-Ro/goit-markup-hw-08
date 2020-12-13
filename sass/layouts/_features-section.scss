@@ -3,8 +3,13 @@
 }
 
 .features {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    @include for-size(desktop) {
+        margin-top: 94px;
+        margin-bottom: 94px;
+    }
 }
 
 .visually-hidden {
@@ -37,7 +42,18 @@
     }
 }
 
+.feature-item {
+    @include for-size(desktop) {
+        display: inline-block;
+        width: 270px;
+    }
     
+    &:not(:last-child) {
+        @include for-size(desktop) {
+            margin-right: 30px;
+        }  
+    }
+}
 
 .feature-bg {
     border: 0;
@@ -53,6 +69,11 @@
 
     @include for-size(tablet) {
         width: 354px;
+        height: 120px;
+    }
+
+    @include for-size(desktop) {
+        width: 270px;
         height: 120px;
     }
 }

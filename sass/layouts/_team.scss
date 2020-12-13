@@ -29,12 +29,6 @@
 
 .team-element {
     width: 450px;
-
-    @include for-size(tablet) {
-        margin-right: 30px;
-        width: 354px;
-        height: 536px;
-    }
     
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -43,6 +37,17 @@
     padding-bottom: 24px;
     &:not(:last-child) {
         margin-bottom: 30px;
+    }
+
+    @include for-size(tablet) {
+        margin-right: 30px;
+        width: 354px;
+        height: 536px;
+    }
+
+    @include for-size(desktop) {
+        width: 270px;
+        height: 398px;
     }
 }
 
@@ -56,6 +61,10 @@
     @include for-size(tablet) {
         width: 354px;
         height: 374px;
+    }
+    @include for-size(desktop) {
+        width: 270px;
+        height: 260px;
     }
 }
 
@@ -89,13 +98,12 @@
     align-items: center;
 }
 
-// .social-links-items:not(:last-child) {
-//     margin-right: 10px;
-// }
+@media screen and(min-width: 1200px) {
+    .social-links-items:not(:last-child) {
+        margin-right: 10px;
+    }
+}
 
-// .social-links-items {
-//     padding-bottom: 24px;
-// }
 
 .social-link {
     text-decoration: none;

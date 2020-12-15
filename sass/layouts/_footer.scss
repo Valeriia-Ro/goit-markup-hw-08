@@ -62,6 +62,7 @@
 }
 
 .tel {
+    margin-top: 8px;
     margin-bottom: 0;
 }
 
@@ -155,13 +156,16 @@
     
     padding-left: 29px;
     padding-right: 62px;
-    margin-left: 12px;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-style: none;
     border-radius: 4px; 
     cursor: pointer;
     margin-top: 20px;
+
+    @include for-size(tablet) {
+        margin-left: 12px;
+    }
 
     @include for-size(desktop) {
         margin-top: 0;

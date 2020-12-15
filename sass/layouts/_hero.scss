@@ -5,17 +5,25 @@
     background-image:linear-gradient( to right,
     rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
     url(../images/hero-mobile.jpg);
-    width: 480px;
-    height: 400px;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     margin-left: auto;
     margin-right: auto;
 
+    @include for-size(tablet) {
+        max-width: 768px;
+    }
+
+    @include for-size(desktop) {
+        max-width: 1200px;
+    }
 }
 
-@media (min-resolution: 2dppx) {
+@media screen and (min-resolution: 2dppx) {
     .hero{
         background-image:linear-gradient( to right,
         rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
@@ -34,7 +42,8 @@
     }
 }
 
-@media (min-resolution: 2dppx) {
+@media screen and (min-width: 768px),
+screen and (min-resolution: 2dppx) {
     .hero{
         background-image:linear-gradient( to right,
         rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
@@ -54,7 +63,7 @@
     }
 }
 
-@media (min-resolution: 2dppx) {
+@media screen and (min-resolution: 2dppx) {
     .hero{
         background-image:linear-gradient( to right,
         rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),

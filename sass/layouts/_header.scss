@@ -1,12 +1,24 @@
 .header {
     width: 100%;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: $white-color;
     border: 1px solid #ECECEC;
     position: relative;
 
     & > .content {
         display: flex;
+    } 
+    
+    @include for-size(tablet) {
+        max-width: 768px;
     }
+
+    @include for-size(tablet) {
+        max-width: 1200px;
+    }
+
 }
 
 .header-nav {
@@ -22,14 +34,23 @@
 
 }
 
-@media screen and (max-width: 767px) {
-    .header__content {
+.header__content {
+    width: 100%;
+    @include for-size(mobile-only) {
+        max-width: 480px;
         display: flex;
         align-items: center;
         justify-content: center;
         padding-top: 10px;
-        padding-bottom: 10px;  
+        padding-bottom: 10px; 
     }
+
+    @include for-size(tablet) {
+        padding-top: 6px; 
+        width: 134px;
+        margin-right: 88px; 
+    }
+     
 }
 
 
@@ -40,7 +61,7 @@
     background-color: $white-color;
     padding: 0;
     border: none;
-    margin-left: 276px;
+    margin-left: auto;
     justify-content: center;
     align-items: center;
     
@@ -71,7 +92,8 @@
 }
 
 .mobile-menu {
-
+    z-index: 100;
+    
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $white-color;
@@ -79,6 +101,8 @@
     &.is-open {
         @include for-size(mobile-only) {
             display: block;
+            width: 100%;
+            max-width: 480px;
         }    
     }
 
@@ -88,6 +112,7 @@
         top: 100%;
         left: 0;
         width: 100%;
+        max-width: 480px;
         height: auto;
     }
 
@@ -96,6 +121,7 @@
         align-items: center;
         margin: 0;
         padding: 0;
+        
     }
      
 }
@@ -107,6 +133,7 @@
 
     @include for-size(tablet) {
         display: flex;
+        
     }
 
     & .item:not(:last-child) {
@@ -185,8 +212,10 @@
 
 .mailto__tel {
     margin-top: 16px;
-    @include for-size(tablet) {
+
+    @include for-size(tablet) { 
         margin-top: 10px;
+        
     }
 
     @include for-size(desktop) {
@@ -205,8 +234,8 @@
 
     @include for-size(tablet) {
         display: inline-block;
-        text-align: center;
         margin-left: 84px;
+        text-align: start;
     }
 
     @include for-size(desktop) {
@@ -244,10 +273,11 @@
 
     @include for-size(tablet) {
         font-size: 12px;
-        line-height: 1.17em;  
+        line-height: 1.17em; 
+        display: inline-flex; 
     }
 
-    @include for-size(tablet) {
+    @include for-size(desktop) {
         font-size: 14px;
         line-height: 1.14em;
         display: inline-flex;

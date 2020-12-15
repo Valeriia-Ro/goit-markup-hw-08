@@ -17,14 +17,6 @@
     }
 }
 
-.header__content {
-    & > .logo {
-        @include for-size(tablet){
-            margin-right: 88px;
-        }
-    }
-}
-
 
 .logo-web {
     color:  $highlight-color;

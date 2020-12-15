@@ -48,7 +48,12 @@
     @include for-size(tablet) {
         padding-top: 6px; 
         width: 134px;
-        margin-right: 88px; 
+        margin-right: 93px; 
+    }
+
+    @include for-size(desktop) {
+        padding-top: 0; 
+        width: 145px; 
     }
      
 }

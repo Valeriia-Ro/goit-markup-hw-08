@@ -34,6 +34,7 @@
     @include for-size(desktop) {
         margin-right: 70px;
         text-align: start;
+        width: 231px;
     }
 }
 
@@ -131,7 +132,8 @@
 .subscribe {
     margin-top: 60px;
     position: relative;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     @include for-size(desktop) {
         margin-left: 93px; 
         padding-top: 12px;
@@ -202,7 +204,8 @@
 }
 
 .mail-input {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 50px;
     margin: 0;
     padding-top: 15px;

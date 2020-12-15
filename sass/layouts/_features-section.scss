@@ -60,7 +60,8 @@
     padding: 0;
     display: flex;
     margin-bottom: 30px;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 120px;
     background: #F5F4FA;
     border-radius: 4px;
@@ -68,13 +69,14 @@
     align-items: center;
 
     @include for-size(tablet) {
-        width: 354px;
-        height: 120px;
+        width: 100%;
+        max-width: 354px;
+        
     }
 
     @include for-size(desktop) {
-        width: 270px;
-        height: 120px;
+        width: 100%;
+        max-width: 270px;
     }
 }
 
@@ -95,6 +97,9 @@
     color: $title-text-color;
     margin-top:  0;
     margin-bottom: 10px;
+    @include for-size(tablet) {
+        text-align: start;
+    }
 }
 
 

@@ -171,6 +171,7 @@ img {
 
 @media (max-width: 767px) {
   .mobile-menu.is-open {
+    border-top: 1px solid #ECECEC;
     display: block;
     width: 100%;
     max-width: 480px;
@@ -276,7 +277,7 @@ img {
 
 @media (min-width: 768px) {
   .active-page::after {
-    top: 50px;
+    top: 270%;
   }
 }
 
@@ -1411,6 +1412,12 @@ img {
   color: #FFFFFF;
   background: transparent;
   padding-left: 16px;
+}
+
+@media (min-width: 768px) {
+  .mail-input {
+    width: 450px;
+  }
 }
 
 @media (min-width: 1200px) {

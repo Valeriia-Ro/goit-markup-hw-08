@@ -105,6 +105,7 @@
 
     &.is-open {
         @include for-size(mobile-only) {
+            border-top: 1px solid #ECECEC;
             display: block;
             width: 100%;
             max-width: 480px;
@@ -206,7 +207,7 @@
     border-radius: 2px;
 
     @include for-size(tablet) {
-        top: 50px;
+        top: 270%;
     }
 
     @include for-size(desktop) {

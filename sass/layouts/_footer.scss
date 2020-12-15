@@ -226,6 +226,10 @@
     background: transparent;
     padding-left: 16px;
 
+    @include for-size(tablet) {
+        width: 450px;
+    }
+
     @include for-size(desktop) {
         width: 358px;
     }

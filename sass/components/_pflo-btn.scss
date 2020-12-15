@@ -12,17 +12,14 @@
 .btn-list {
     display: flex; 
     flex-wrap: wrap;
-    padding-bottom: 24px;
+    padding-bottom: 40px;
 
     @include for-size(tablet) {
         justify-content: center;
+        padding-bottom: 30px;
     }
 }
 
-.btn-item:not(:last-child) {
-    margin-right: 8px;
-    margin-bottom: 16px;
-}
 
 .btn {
     font-family: Roboto;
@@ -45,5 +42,13 @@
     background-color: $highlight-color;
     color: $white-color;
     }
+
+    @include for-size(tablet) {
+        margin-bottom: 0;
+    }
 }
 
+.btn-item:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 16px;
+}

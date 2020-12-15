@@ -7,9 +7,10 @@
 
 .spesial {
     display: block;
-    @include for-size(desktop) {
-        padding-bottom: 94px;
-    }
+    // @include for-size(desktop) {
+    //     padding-bottom: 94px;
+
+    // }
 }
 
 .special__element {

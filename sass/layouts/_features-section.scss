@@ -1,5 +1,9 @@
 .sec-section {
     background-color: $white-color;
+    @include for-size(desktop) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
 }
 
 .features {
@@ -7,8 +11,8 @@
     padding-bottom: 60px;
 
     @include for-size(desktop) {
-        padding-top: 94px;
-        padding-bottom: 94px;
+        padding: 0;
+        margin-bottom: 94px;
     }
 }
 
@@ -61,8 +65,12 @@
 
         &:not(:last-child) {
            margin-right: 30px;
-         
         }
+
+        &:nth-child(-n+2) {
+            margin-bottom: 0;
+        }
+
     }
     
 }

@@ -510,6 +510,13 @@ img {
   background-color: #FFFFFF;
 }
 
+@media (min-width: 1200px) {
+  .sec-section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
 .features {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -517,8 +524,8 @@ img {
 
 @media (min-width: 1200px) {
   .features {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 0;
+    margin-bottom: 94px;
   }
 }
 
@@ -567,6 +574,9 @@ img {
   }
   .feature-item:not(:last-child) {
     margin-right: 30px;
+  }
+  .feature-item:nth-child(-n+2) {
+    margin-bottom: 0;
   }
 }
 
@@ -648,12 +658,6 @@ img {
   display: block;
 }
 
-@media (min-width: 1200px) {
-  .spesial {
-    padding-bottom: 94px;
-  }
-}
-
 .special__element {
   position: relative;
 }
@@ -695,6 +699,13 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .team-content {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .subtitle {
@@ -876,6 +887,13 @@ img {
   padding-bottom: 60px;
 }
 
+@media (min-width: 1200px) {
+  .clients {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
 .clients-logo {
   display: flex;
   flex-wrap: wrap;
@@ -976,18 +994,14 @@ img {
 .btn-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 24px;
+  padding-bottom: 40px;
 }
 
 @media (min-width: 768px) {
   .btn-list {
     justify-content: center;
+    padding-bottom: 30px;
   }
-}
-
-.btn-item:not(:last-child) {
-  margin-right: 8px;
-  margin-bottom: 16px;
 }
 
 .btn {
@@ -1011,6 +1025,17 @@ img {
   color: #FFFFFF;
 }
 
+@media (min-width: 768px) {
+  .btn {
+    margin-bottom: 0;
+  }
+}
+
+.btn-item:not(:last-child) {
+  margin-right: 8px;
+  margin-bottom: 16px;
+}
+
 .work-list {
   display: block;
 }
@@ -1026,10 +1051,13 @@ img {
   width: 100%;
   max-width: 450px;
   height: 404px;
-  margin-bottom: 30px;
   border: 1px solid #EEEEEE;
   padding-bottom: 20px;
   margin-right: 0;
+}
+
+.work-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .work-item:hover {
@@ -1206,6 +1234,7 @@ img {
 }
 
 .foot-contacts {
+  display: inline-block;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -1213,11 +1242,16 @@ img {
   line-height: 1.71em;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 1200px) {
+  .foot-contacts {
+    margin-bottom: 9px;
+  }
 }
 
 .tel {
-  margin-top: 8px;
   margin-bottom: 0;
 }
 
